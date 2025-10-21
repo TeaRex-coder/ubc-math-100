@@ -1,8 +1,17 @@
 %\documentclass{exam}
 \documentclass[answers,addpoints]{exam}
-\usepackage{amsmath,amssymb,enumerate,float,tikz,etoolbox,ifthen,xcolor,fullpage,ulem,graphicx, comment,hyperref,multicol,enumerate,makecell,pgfplots}
+\usepackage{amsmath,amssymb,enumerate,float,tikz,etoolbox,ifthen,xcolor,ulem,graphicx, comment,hyperref,multicol,enumerate,makecell,pgfplots,geometry}
 \pgfplotsset{compat=1.18}
 \usetikzlibrary{decorations.pathreplacing}
+
+\geometry{
+  % margin=1in,
+  top=0.5in,
+  bottom=0.5in,
+  left=0.75in,
+  right=0.75in,
+  letterpaper
+}
 
 \definecolor{MyGreen}{rgb}{0.1, 0.4, 0.1}
 \definecolor{MyBlue}{rgb}{0.1, 0.1, 0.9}
@@ -37,7 +46,9 @@ Alexandre \textbf{Boutoille} (22291660) Brennan \textbf{Coetzer} (64702178) Dino
 \subsection*{Reflection Question}
 
 \begin{solution}
-  Enter your solution here
+  The questions in high school math were more directed towards solving the problem using equations and following the steps whereas the questions in the first group project required a lot more thought and proof both in mathematical equations and graphs as well as written explanations. This required a much deeper understanding of different mathematical concepts rather than just how to apply them.
+
+  Question 2c of Group Project 1 asks us to rank four functions by size, this not only required knowledge of what each function looks like graphically but also how the function behaves over time. Therefore, concepts on how trigonometric functions, exponential functions, and rational functions behave were required to understand the problem and thus solve it.
 \end{solution}
 
 \hrulefill
@@ -54,6 +65,15 @@ Alexandre \textbf{Boutoille} (22291660) Brennan \textbf{Coetzer} (64702178) Dino
     \begin{figure}[H]
       \centering
       \begin{tabular}{@{}l@{}}
+        \includegraphics[width=5cm]{desmos-graph.png}
+      \end{tabular}
+      \caption{$x^3+y^3=6xy$ Graph}
+      \label{fig:graph}
+    \end{figure}
+
+    \begin{figure}[H]
+      \centering
+      \begin{tabular}{@{}l@{}}
         $\displaystyle x^3+y^3=6xy$ \\[6pt]
         $\displaystyle (3)^3+(3)^3=6(3)(3)$ \\[6pt]
         $\displaystyle 54=54$ \\[12pt]
@@ -61,17 +81,15 @@ Alexandre \textbf{Boutoille} (22291660) Brennan \textbf{Coetzer} (64702178) Dino
         $\displaystyle \frac{dy}{dx}=\frac{2y-x^2}{y^2-2x}$ \\[6pt]
         $\displaystyle \frac{dy}{dx}=\frac{2(3)-(3)^2}{(3)^2-2(3)}$ \\[6pt]
         $\displaystyle =-1$ \\[12pt]
-        $\displaystyle y-y_{1}=m(x-x_{1})$ \\[6pt]
-        $\displaystyle y-3=-1(x-3)$ \\[6pt]
-        $\displaystyle y=-x+6$ \\[6pt]
+        $\displaystyle L(x)=f(a)+f^\prime(x)(x-a)$ \\[6pt]
+        $\displaystyle L(x)=(3)+(-1)(x-3)$ \\[6pt]
+        $\displaystyle y=-x+6$ \\
       \end{tabular}
-      \caption{Question 1a Mathematical Work}
+      \caption{1a Mathematical Work}
       \label{fig:1a-math}
     \end{figure}
 
-    % As seen in \ref{fig:1a-math}...
-
-    We can assume that we can write y=f(x) near this point as if point (3,3) exists, and only has one tangent line value that exists. While on the graph there may be two points at the x value 3, at the point (3,3), y=f(x) locally exists. If we could not write y=y(x) near this point, the slope of our tangent line wouldn't exist, and would be a value of $\infty$, signaling the graph turning back on itself at this specific point. However, since the slope of the tangent line is -1, which is a real number, we can say that y=f(x) near (3,3). Even though the overall curve fails the vertical line test, in this small defined region, there is only one tangent line that exists; therefore, we can say y=f(x) near (3,3).
+    It is assumed that $y=f(x)$ if $(3,3)$ exists and has only one tangent line. Although $x=3$ has two values as seen in \ref{fig:graph}, $y=f(x)$ exists locally at $(3,3)$. If $y=f(x)$ could not be written at the point, the tangent line would not exist with a value of $\infty$. This would indicate a graph turning-back on itself Even though the curve fails the VLT, there is only one tangent line in the small region. $\therefore$ the slope is $-1$—a real number—so $y=f(x)$ near $(3,3)$.
 
     \begin{figure}[H]
       \centering
@@ -79,13 +97,13 @@ Alexandre \textbf{Boutoille} (22291660) Brennan \textbf{Coetzer} (64702178) Dino
         $\displaystyle L(x)=f(a)+f^\prime(a)(x-a)$ \\[6pt]
         $\displaystyle L(1)=3-1(1-3)$ \\[6pt]
         $\displaystyle L(2.5)=3-1(2.5-3)$ \\[6pt]
-        $\displaystyle =3.5$ \\[6pt]
+        $\displaystyle =3.5$ \\
       \end{tabular}
-      \caption{Question 1b Mathematical Work}
+      \caption{1b Mathematical Work}
       \label{fig:1b-math}
     \end{figure}
 
-    The single step estimate for b is inaccurate since linear approximations are approximations, and the farther you go away from the point for which the linear approximation was derived from, the less accurate the approximation becomes. Essentially what linear approximations does is find points that are on the tangent line; this is why the farther away you go, the less accurate it becomes, unless it is a function like a sin wave where the tangent line will intersect with the function's graph again. Regardless, since the curve in this case is concave down (as we can see from the plot of the curve), we know that the actual value of the graph when x=2.5 will be less than that of its linear approximation at (3,3). That is why the linear approximation is an overestimate.
+    The single-step estimate for $b$ is inaccurate as linear approximations are accurate the more you deviate from where the approximation was derived from. Linear approximations find points on a tangent line, hence the further you deviate the more accuracy decreases. Regardless, since the curve is concave downwards as seen in \ref{fig:graph}, the real value at $x=2.5$ will be less than the overestimate provided by the approximation.
 
   \end{solution}
 
@@ -113,7 +131,7 @@ Alexandre \textbf{Boutoille} (22291660) Brennan \textbf{Coetzer} (64702178) Dino
         5 & 2.5000 & 3.2183 & 0.0348 & 2.4000 & 3.2148 \\
         \hline
       \end{tabular}
-      \caption{a Calculations Table}
+      \caption{2a Calculations Table}
       \label{fig:2a-vi-table}
     \end{figure}
 
@@ -125,14 +143,14 @@ Alexandre \textbf{Boutoille} (22291660) Brennan \textbf{Coetzer} (64702178) Dino
             xlabel=$x_n$,
             ylabel=$y_n$,
             grid=both,
-            width=8cm,
-            height=8cm,
+            width=6cm,
+            height=6cm,
             xmin=2.45, xmax=3.05,
             ymin=3.0, ymax=3.22,
             tick label style={font=\small}
           ]
 
-          \addplot[only marks, red, mark=*] coordinates {
+          \addplot[blue, mark=*,thin,smooth] coordinates {
             (3.0000, 3.0000)
             (2.9000, 3.1000)
             (2.8000, 3.1580)
@@ -142,7 +160,7 @@ Alexandre \textbf{Boutoille} (22291660) Brennan \textbf{Coetzer} (64702178) Dino
           };
         \end{axis}
       \end{tikzpicture}
-      \caption{a $x_n$ vs $x_y$ plot}
+      \caption{2a $x_n$ vs $x_y$ plot}
       \label{fig:2a-vii-plot}
     \end{figure}
 
@@ -172,7 +190,7 @@ Alexandre \textbf{Boutoille} (22291660) Brennan \textbf{Coetzer} (64702178) Dino
         10 & 2.5000 & 3.1954 & 0.0270 & 2.4500 & 3.1941 \\
         \hline
       \end{tabular}
-      \caption{b Calculations Table}
+      \caption{2b Calculations Table}
       \label{fig:2b-table}
     \end{figure}
 
@@ -184,14 +202,14 @@ Alexandre \textbf{Boutoille} (22291660) Brennan \textbf{Coetzer} (64702178) Dino
             xlabel=$x_n$,
             ylabel=$y_n$,
             grid=both,
-            width=8cm,
-            height=8cm,
+            width=6cm,
+            height=6cm,
             xmin=2.40, xmax=3.05,
             ymin=3.0, ymax=3.20,
             tick label style={font=\small}
           ]
 
-          \addplot[only marks, red, mark=*] coordinates {
+          \addplot[blue, mark=*,thin,smooth] coordinates {
             (3.0000, 3.0000)
             (2.9500, 3.0500)
             (2.9000, 3.0882)
@@ -207,7 +225,7 @@ Alexandre \textbf{Boutoille} (22291660) Brennan \textbf{Coetzer} (64702178) Dino
           };
         \end{axis}
       \end{tikzpicture}
-      \caption{b $x_n$ vs $x_y$ plot}
+      \caption{2b $x_n$ vs $x_y$ plot}
       \label{fig:2b-plot}
     \end{figure}
 
@@ -228,7 +246,7 @@ Alexandre \textbf{Boutoille} (22291660) Brennan \textbf{Coetzer} (64702178) Dino
         $\displaystyle \frac{dy}{dx}=\frac{2(0)-(0^2)}{(0)^2-2(0)}$ \\[6pt]
         $\displaystyle =0=\text{DNE}$ \\[6pt]
       \end{tabular}
-      \caption{Question 3a Mathematical Work}
+      \caption{3a Mathematical Work}
       \label{fig:3a-math}
     \end{figure}
 
@@ -241,6 +259,17 @@ Alexandre \textbf{Boutoille} (22291660) Brennan \textbf{Coetzer} (64702178) Dino
     Since no singular tangent line exists at $(0,0)$ when the graph intersects, as there are multiple paths leading to $(0,0)$, issues will arise when solving for the slope.
 
     There are essentially multiple tangent lines at $(0,0)$ since multiple path lead there. This means there are multiple coordinates that the linear approximation could give at this point for $(a,b)$ when $a=1$, and $(p,q)$ with $q=1$. Generally, you cannot apply this approaching starting at $(0,0)$.
+
+    \begin{figure}[H]
+      \centering
+      \begin{tabular}{@{}l@{}}
+        $\displaystyle \frac{0}{0}$ \\[6pt]
+      \end{tabular}
+      \caption{3d Mathematical Work}
+      \label{fig:3d-math}
+    \end{figure}
+
+    We recognize the intermediate form tells use we cannot start at the point $(0,0)$, so instead, we start at a point that is incredibly close to $(0,0)$, but not quite there. We can use the estimated point $(0.05,0)$. We don't know what the true corresponding y value with $x=0.05$ is, but we know it is so close to $0$ that we can essentially assume that it is zero for the purpose of our approximation, since it is just an approximation. Then, using (x0,y0)=(0.05,0), we can start the iterative tangent line approach, increasing in small steps of $h=0.05$ for accuracy to give us coordinates of points using tangent lines incredibly close to $(0,0)$, but not quite at $(0,0)$. The math demonstrated shows the steps to solve for the slope of one tangent line near $(0,0)$, but not quite at $(0,0)$. This will give us a very good approximation of values, overcoming issues we identify with starting at $(0,0)$. The points intersect perfectly at $(0,0)$, but not at points incredibly close to $(0,0)$, so we can still use the iterative method at those points. If we wanted to find an estimate of the for an $0$ value of $1$, we would continue this iterative process until we get to an $x$-value of $1$. This is how we would essentially solve these types of problems while overcoming the issue of starting at $(0,0)$. To make this mathematical approach more accurate, we could make h increment in smaller steps like $0.01$ instead of $0.05$. The most accurate increment would be incrementing by values infinitely close to $0$, all the way to the desired value, as there would be an infinite amount of tangent line approximations, giving an essentially perfectly accurate value for whatever point we try to approximate. Unfortunately, this approach would also take an infinite amount of time to calculate, making it ineffective to say the least. The core concept to consider is that having smaller increments of $h$ will produce smaller changes in the $x$ and $y$ values, making the approximations stay closer to the curve between each iteration of the process. This gives the most accurate final value, but takes more steps.
 
   \end{solution}
 
