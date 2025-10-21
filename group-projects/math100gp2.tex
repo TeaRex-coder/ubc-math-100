@@ -46,9 +46,9 @@ Alexandre \textbf{Boutoille} (22291660) Brennan \textbf{Coetzer} (64702178) Dino
 \subsection*{Reflection Question}
 
 \begin{solution}
-  The questions in high school math were more directed towards solving the problem using equations and following the steps whereas the questions in the first group project required a lot more thought and proof both in mathematical equations and graphs as well as written explanations. This required a much deeper understanding of different mathematical concepts rather than just how to apply them.
+  The questions in high school math are more directed towards solving problems using equations and following steps taught in class, whereas the questions in the first group project require a lot more thought and proof, both in mathematical equations, graphs, and especially written explanations. This requires a much deeper understanding of different mathematical concepts rather than just how to apply them.
 
-  Question 2c of Group Project 1 asks us to rank four functions by size, this not only required knowledge of what each function looks like graphically but also how the function behaves over time. Therefore, concepts on how trigonometric functions, exponential functions, and rational functions behave were required to understand the problem and thus solve it.
+  Currently Group 6 communicates well on Instagram, as everyone monitors the group chat closely for information and questions about delegated tasks and meetings. Currently, some members have contributed more to the initial steps in problem-solving, while others contribute to the later and final steps of the project. Ideally, all members will contribute to all stages of the process. To even the workload, the group will try to set up a meeting before working on the project to make sure everyone is on the same page. After that, subsequent meetings may potentially be helpful to complete group work or not, depending on the group consensus. It may be that if a person completes more tasks, they may have more flexibility for attending an upcoming meeting than someone who has completed fewer tasks to balance out the workload.
 \end{solution}
 
 \hrulefill
@@ -89,7 +89,7 @@ Alexandre \textbf{Boutoille} (22291660) Brennan \textbf{Coetzer} (64702178) Dino
       \label{fig:1a-math}
     \end{figure}
 
-    It is assumed that $y=f(x)$ if $(3,3)$ exists and has only one tangent line. Although $x=3$ has two values as seen in \ref{fig:graph}, $y=f(x)$ exists locally at $(3,3)$. If $y=f(x)$ could not be written at the point, the tangent line would not exist with a value of $\infty$. This would indicate a graph turning-back on itself Even though the curve fails the VLT, there is only one tangent line in the small region. $\therefore$ the slope is $-1$—a real number—so $y=f(x)$ near $(3,3)$.
+    It is assumed that $y=f(x)$ if $(3,3)$ exists and has only one tangent line. Although $x=3$ has two values as seen in \ref{fig:graph}, $y=f(x)$ exists locally at $(3,3)$. If $y=f(x)$ could not be written at the point, the tangent line would not exist with a value of $\infty$. This would indicate a graph turning-back on itself Even though the curve fails the VLT, there is only one tangent line in the small region. Therefore, the slope is $-1$—a real number—so $y=f(x)$ near $(3,3)$.
 
     \begin{figure}[H]
       \centering
@@ -103,7 +103,7 @@ Alexandre \textbf{Boutoille} (22291660) Brennan \textbf{Coetzer} (64702178) Dino
       \label{fig:1b-math}
     \end{figure}
 
-    The single-step estimate for $b$ is inaccurate as linear approximations are accurate the more you deviate from where the approximation was derived from. Linear approximations find points on a tangent line, hence the further you deviate the more accuracy decreases. Regardless, since the curve is concave downwards as seen in \ref{fig:graph}, the real value at $x=2.5$ will be less than the overestimate provided by the approximation.
+    The single-step estimate $b$ is inaccurate, as linear approximations are accurate the more you deviate from where the approximation was derived from. Linear approximations find points on a tangent line; hence, the further you deviate, the more accuracy decreases. Regardless, since the curve is concave downwards as seen in \ref{fig:graph}, the real value at $x=2.5$ will be less than the overestimate provided by the approximation.
 
   \end{solution}
 
@@ -143,8 +143,8 @@ Alexandre \textbf{Boutoille} (22291660) Brennan \textbf{Coetzer} (64702178) Dino
             xlabel=$x_n$,
             ylabel=$y_n$,
             grid=both,
-            width=6cm,
-            height=6cm,
+            width=8cm,
+            height=8cm,
             xmin=2.45, xmax=3.05,
             ymin=3.0, ymax=3.22,
             tick label style={font=\small}
@@ -160,11 +160,11 @@ Alexandre \textbf{Boutoille} (22291660) Brennan \textbf{Coetzer} (64702178) Dino
           };
         \end{axis}
       \end{tikzpicture}
-      \caption{2a $x_n$ vs $x_y$ plot}
+      \caption{2a $x_n$ vs $y_n$ plot}
       \label{fig:2a-vii-plot}
     \end{figure}
 
-    The approximate value for b produced in this process is $b \approx 3.218927$, this is slighter closer to the actual value than the value of $3.5$ obtained in Question 1. The accuracy improved because a new tangent line is used every time we move closer to $2.5$ from $3$. However, as we are approximating the value of $y_n+1$ using mn, the tangent line still slightly overshoots the actual value of $y_n+1$ of the curve for every step, resulting in error. These errors then accumulate, resulting in an approximate value of $b$ that is higher than the actual value.
+    The new $b$ value of $b \approx 3.218927$ is closer than the value of $3.5$ obtained in \ref{fig:1a-math}. The increased accuracy comes from the addition of a new tangent line every time we move close to $2.5$ from $3$. However, since values of $y_n+1$ are approximated using $m_n$, the tangent line overshoots the actual value(s) of the curve. These errors accumulate, resulting in an over-approximated value of $b$.
 
     \begin{figure}[H]
       \centering
@@ -202,8 +202,8 @@ Alexandre \textbf{Boutoille} (22291660) Brennan \textbf{Coetzer} (64702178) Dino
             xlabel=$x_n$,
             ylabel=$y_n$,
             grid=both,
-            width=6cm,
-            height=6cm,
+            width=8cm,
+            height=8cm,
             xmin=2.40, xmax=3.05,
             ymin=3.0, ymax=3.20,
             tick label style={font=\small}
@@ -225,13 +225,11 @@ Alexandre \textbf{Boutoille} (22291660) Brennan \textbf{Coetzer} (64702178) Dino
           };
         \end{axis}
       \end{tikzpicture}
-      \caption{2b $x_n$ vs $x_y$ plot}
+      \caption{2b $x_n$ vs $y_n$ plot}
       \label{fig:2b-plot}
     \end{figure}
 
-    Changing $h$ from $0.1$ to $0.05$ caused the approximate value of $b$ to go from $b \approx 3.218927$ to $b \approx 3.195442$. This is even closer to the actual value of $b \approx 3.174607$, meaning that using a smaller $h$ improved the accuracy of the approximation.
-
-    This is because we must calculate a new $y_n$ more frequently when using a smaller $h$, thus each tangent line calculated is closer to the curve and the error produced on each step becomes smaller. This results in a smaller error overall and thus a closer approximation to the actual value of $b$.
+    Changing $h$ from $0.1$ to $0.05$ change the approximation to $b \approx 3.195442$. This is closer to the actual value of $b \approx 3.174607$, meaning a smaller $h$ improves the approximation accuracy. This is because calculating values of $y_n$ more frequently with smaller $h$ values creates tangent lines closer to the curve with less error. This results in a curve for \ref{fig:2b-plot} more accurate to the actual value of $b$.
 
   \end{solution}
 
@@ -250,26 +248,34 @@ Alexandre \textbf{Boutoille} (22291660) Brennan \textbf{Coetzer} (64702178) Dino
       \label{fig:3a-math}
     \end{figure}
 
-    At $(0,0)$, multiple paths pass-through. It's a point of self-intersection, so has no (WORD). $\therefore$ we can't reliably use the tangent line method.
+    As seen in \ref{fig:graph}, multiple paths pass through $(0,0)$. It is a point of self-intersection with no well-defined tangent direction. Therefore, the tangent line method cannot be used reliably. The derivative found in \ref{fig:1a-math} cannot be simplified at $(0,0)$ using L'Hôpital's rule, as seen in \ref{fig:3a-math}. Therefore, a slope cannot be obtained for the tangent line, so the iterative tangent line method at $(0,0)$ cannot be used.
 
-    The derivative found in \ref{fig:1a-math} can't really be simplified at $(0,0)$ using L'Hôpital's rule as seen in \ref{fig:3a-math}. $\therefore$ you cannot get a slope for the tangent line, so the iterative tangent line method at $(0,0)$ can't be used.
+    A linear approximation cannot be used to find $(p,q)$ when $q=1$ at $(0,0)$. This is because the slope of the tangent line is an indeterminate form, as there is an intersection of paths at $(0,0)$ on the graph. We cannot use iterative tangent line techniques to estimate anything starting at $(0,0)$, as the initial slope is an indeterminate form.
 
-    A linear approximation cannot be used to find $(p,q)$ when $q=1$ at $(0,0)$. This is because the slope of the tangent line is an indeterminate form, as there is an intersection of paths at $(0,0)$ on the graph. We cannot use iterative tangent line techniques to estimate anything if we start at $(0,0)$, as the initial slope is an indeterminate form.
+    Since there is no singular tangent line exists at $(0,0)$ when the graph intersects, as there are multiple paths leading to $(0,0)$, problems will arise when solving for the slope, as seen in \ref{fig:3a-math}.
 
-    Since no singular tangent line exists at $(0,0)$ when the graph intersects, as there are multiple paths leading to $(0,0)$, issues will arise when solving for the slope.
-
-    There are essentially multiple tangent lines at $(0,0)$ since multiple path lead there. This means there are multiple coordinates that the linear approximation could give at this point for $(a,b)$ when $a=1$, and $(p,q)$ with $q=1$. Generally, you cannot apply this approaching starting at $(0,0)$.
+    There are multiple tangent lines at $(0,0)$. This suggests there are multiple coordinates that the linear approximation could give at this point for $(a,b)$ when $a=1$, and $(p,q)$ with $q=1$. Generally, this approach cannot be applied starting at $(0,0)$.
 
     \begin{figure}[H]
       \centering
       \begin{tabular}{@{}l@{}}
-        $\displaystyle \frac{0}{0}$ \\[6pt]
+        $\displaystyle m_0\frac{2(0)^2-(0.05)^2}{(0)^2-2(0.05)}=0.025$ \\[6pt]
+        $\displaystyle x_1=(0.05)+(0.05)=0.1$ \\[6pt]
+        $\displaystyle y_1=0+(0.05)(0.025)=0.00125$ \\[6pt]
+        $\displaystyle (x_1,y_1)=(0.1,0.00125)$ \\[6pt]
+        $\displaystyle m_1\frac{2(0.00125)-(0.1)^2}{(0.00125)^2-2(0.1)}=0.037500293...$ \\[6pt]
+        $\displaystyle x_2=0.15$ \\[6pt]
+        $\displaystyle y_2=3.125014659...\cdot10^{-3}$ \\[6pt]
+        $\displaystyle (x_2,y_2)=(0.15,0.003123015...)$ \\[6pt]
+        $\displaystyle $ \\[6pt]
       \end{tabular}
       \caption{3d Mathematical Work}
       \label{fig:3d-math}
     \end{figure}
 
-    We recognize the intermediate form tells use we cannot start at the point $(0,0)$, so instead, we start at a point that is incredibly close to $(0,0)$, but not quite there. We can use the estimated point $(0.05,0)$. We don't know what the true corresponding y value with $x=0.05$ is, but we know it is so close to $0$ that we can essentially assume that it is zero for the purpose of our approximation, since it is just an approximation. Then, using (x0,y0)=(0.05,0), we can start the iterative tangent line approach, increasing in small steps of $h=0.05$ for accuracy to give us coordinates of points using tangent lines incredibly close to $(0,0)$, but not quite at $(0,0)$. The math demonstrated shows the steps to solve for the slope of one tangent line near $(0,0)$, but not quite at $(0,0)$. This will give us a very good approximation of values, overcoming issues we identify with starting at $(0,0)$. The points intersect perfectly at $(0,0)$, but not at points incredibly close to $(0,0)$, so we can still use the iterative method at those points. If we wanted to find an estimate of the for an $0$ value of $1$, we would continue this iterative process until we get to an $x$-value of $1$. This is how we would essentially solve these types of problems while overcoming the issue of starting at $(0,0)$. To make this mathematical approach more accurate, we could make h increment in smaller steps like $0.01$ instead of $0.05$. The most accurate increment would be incrementing by values infinitely close to $0$, all the way to the desired value, as there would be an infinite amount of tangent line approximations, giving an essentially perfectly accurate value for whatever point we try to approximate. Unfortunately, this approach would also take an infinite amount of time to calculate, making it ineffective to say the least. The core concept to consider is that having smaller increments of $h$ will produce smaller changes in the $x$ and $y$ values, making the approximations stay closer to the curve between each iteration of the process. This gives the most accurate final value, but takes more steps.
+    The intermediate means $(0,0)$ cannot be used as a starting point, but $(0.05,0)$—a nearby point—can be used. The true $y$-value at $x=0.05$ is unknown, but is approximated to be near $0$. Using $(x_0,y_0)$, the iterative line approach can be used in small increments of $h=0.05$ for accurate tangent line points near $(0,0)$. \ref{fig:3d-math} demonstrates the steps to solve for a tangent line near $(0,0)$. This provides a good approximation of values to overcome the issues when starting at $(0,0)$. At $(0,0)$, the points intersect perfectly, but not at points near $(0,0)$—the iterative method can be used there. To find an estimate of an $x$-value of $1$, the iterative process could be continued until an $x$-value of $1$ is reached.
+
+    To increase the mathematical approach's accuracy, $h$ could be incremented in smaller steps with diminishing returns. In theory, the most accurate increment would be values infinitely close to $0$, all the way to the desired value, as there would be an infinite amount of linear approximations. This would preset a perfectly accurate value at any point. In practice, this approach would be ineffective as it would take an infinite amount of time to calculate. The core concept is that smaller $h$ increments produces smaller changes in $x$ and $y$ values resulting in approximations closer to the curve. This gives the most accurate final value, but takes more steps.
 
   \end{solution}
 
